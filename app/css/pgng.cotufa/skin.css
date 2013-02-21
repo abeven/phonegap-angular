@@ -1,0 +1,47 @@
+/* skin cotufa */
+body {
+	font-family:Garamond;
+}
+header {
+	color:#ddf8c6;
+	background:#88b7d5;
+	border-bottom:4px solid #c2e1f5;	
+	box-sizing: border-box; 	
+}
+header h1 {
+	font-size:5em;
+	line-height:1.4em;
+	margin-left:4px;
+	text-shadow:0 1px 2px rgba(0,0,0,0.4);
+}
+*[ng-view] {
+	background-image:url('asphalt.png');
+}
+.tabs {
+	text-align:center;
+}
+.tabs>* { 
+	color:#fff;
+	text-shadow:rgba(0,0,0,0.4);
+	font-size:2em;
+	line-height:2.5em;
+	height:100%;
+	cursor:pointer;
+	background:rgba(0,0,0,0.5);
+	box-sizing: border-box; 	
+}
+.tabs>*.active {
+	border-bottom:2px solid #ccc;
+}
+.tabs-content>li {
+	position:absolute;
+	top:0;
+	display:block !important;
+	padding:8px;
+	font-size:2.5em;
+	-webkit-transition: opacity ease-out 0.2s 0.1s;
+	opacity:0;
+}
+.tabs-content>li.active {
+	opacity:1;
+}

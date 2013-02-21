@@ -2,6 +2,7 @@ body {
 	margin:0;
 	padding:0;
 	font-size: 62.5%; 
+	-webkit-user-select: none;
 }
 header {
 	position:fixed;	
@@ -11,15 +12,22 @@ header {
 	height:7em;	
 	overflow:hidden;
 }
-header~div, dl.tabs, ul.tabs-content {
+header~div, dl.tabs, dl.tabs+ul.tabs-content {
 	position:absolute;
 	top:7em;
 	left:0;
 	right:0;
 	bottom:7em;
 }
-div[ng-view] *:last-child  {
+div[ng-view] {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
 	bottom:0;
+}
+div[ng-view] *:last-child  {
+	bottom:0 !important;
 }
 footer {
 	position:absolute;
@@ -30,7 +38,6 @@ footer {
 }
 header h1 {
 	margin:0;
-	font-size:5em;
 }
 
 ul[pgng-scroll] {
@@ -58,6 +65,7 @@ ul[pgng-scroll] {
 }
 
 dl.tabs {
+	margin:0;
 	bottom:inherit;
 	height:5em;
 }
@@ -84,8 +92,15 @@ dl.tabs dd:first-child:nth-last-child(4),
 dl.tabs dd:first-child:nth-last-child(4) ~ dd {
     width: 25%;
 }
-ul.tabs-content {
+dl.tabs+ul.tabs-content {
 	top:12em;
 	list-style-type:none;
 	margin:0;
+	padding:0;
+}
+dl.tabs+ul.tabs-content>* {
+	display:none;
+}
+dl.tabs+ul.tabs-content>*.active  {
+	display:block;
 }

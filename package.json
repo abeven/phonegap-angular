@@ -1,9 +1,9 @@
 {
-  "name": "phonegap-angularjs",
+  "name": "phonegap-angular",
   "version": "0.0.1",
   "private": false,
   "scripts": {
-    "start": "node app"
+    "start": "node scripts\\web-server.js"
   },
   "engines": {
     "node": "*",
@@ -11,5 +11,10 @@
   },
   "dependencies": {
 	"node-static":"*"
+  },
+  "devDependencies": {
+	"grunt":"*",
+	"grunt-cli":"*",	
+	"grunt-contrib":"*"	
   }
 }
