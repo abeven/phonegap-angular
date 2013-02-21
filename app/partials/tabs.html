@@ -1,0 +1,18 @@
+<header>
+	<h1>Tabbed View</h1>
+</header>
+<dl class="tabs" pgng-tabs>
+	<dd data-tab="list">List</dd>
+	<dd class="active" data-tab="map">Map</dd>
+	<dd data-tab="search">Search</dd>
+</dl>
+<ul class="tabs-content">
+	<li id="list" class="scroll-container">
+		<ul pgng-scroll/>
+	</li>	
+	<li id="map">		
+		<div ng-hide="gpsError" app-map></div>
+	</li>
+	<li id="search">
+	</li>
+</ul>

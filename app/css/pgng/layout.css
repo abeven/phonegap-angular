@@ -1,0 +1,91 @@
+body {
+	margin:0;
+	padding:0;
+	font-size: 62.5%; 
+}
+header {
+	position:fixed;	
+	top:0;
+	left:0;
+	right:0;
+	height:7em;	
+	overflow:hidden;
+}
+header~div, dl.tabs, ul.tabs-content {
+	position:absolute;
+	top:7em;
+	left:0;
+	right:0;
+	bottom:7em;
+}
+div[ng-view] *:last-child  {
+	bottom:0;
+}
+footer {
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	height:7em;
+}
+header h1 {
+	margin:0;
+	font-size:5em;
+}
+
+ul[pgng-scroll] {
+	list-style-type:none;
+	margin:0;
+}
+
+/* WIDGETS */
+#spinner {
+	content: 'Loading...';
+	vertical-align:middle;
+	position:absolute;
+	width:100px;
+	height:100px;
+	top:50%;
+	left:50%;
+	margin:auto;
+	margin-top:-50px;
+	margin-left:-50px;
+	display:none;
+	background:#ccc;
+}
+#spinner.show {
+	display:block;
+}
+
+dl.tabs {
+	bottom:inherit;
+	height:5em;
+}
+dl.tabs dd {
+	float:right;
+	margin:0;
+}
+
+dl.tabs dd:first-child:nth-last-child(1) {
+    width: 100%;
+}
+
+dl.tabs dd:first-child:nth-last-child(2),
+dl.tabs dd:first-child:nth-last-child(2) ~ dd {
+    width: 50%;
+}
+
+dl.tabs dd:first-child:nth-last-child(3),
+dl.tabs dd:first-child:nth-last-child(3) ~ dd {
+    width: 33.3333%;
+}
+
+dl.tabs dd:first-child:nth-last-child(4),
+dl.tabs dd:first-child:nth-last-child(4) ~ dd {
+    width: 25%;
+}
+ul.tabs-content {
+	top:12em;
+	list-style-type:none;
+	margin:0;
+}

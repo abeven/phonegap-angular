@@ -1,0 +1,15 @@
+{
+  "name": "phonegap-angularjs",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "node app"
+  },
+  "engines": {
+    "node": "*",
+    "npm":  "*"
+  },
+  "dependencies": {
+	"node-static":"*"
+  }
+}

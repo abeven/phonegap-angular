@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.aelogic.spoton" version="1.0.174">
+    <name>SpotOn</name>
+    <description>
+        All the best spots, in one spot.
+    </description>
+    <author href="http://spotonapp.com" email="support@spotonapp.com">
+        Abe Rodriguez
+    </author>    
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <preference name="orientation" value="portrait"/>
+	<gap:plugin name="Analytics"/>
+    <gap:plugin name="FacebookConnect">
+        <param name="APP_ID" value="268295216525276"/>
+    </gap:plugin>
+    <gap:splash src="images/splash/android/ldpi.png" gap:platform="android" gap:density="ldpi"/>
+    <gap:splash src="images/splash/android/mdpi.png" gap:platform="android" gap:density="mdpi"/>
+    <gap:splash src="images/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi"/>
+    <gap:splash src="images/splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi"/>
+</widget>
