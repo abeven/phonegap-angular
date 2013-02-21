@@ -6,9 +6,9 @@ Barebones JS & CSS template to create Phonegap applications using AngularJS.
 Includes some useful directives and services, and a 3-row layout stylesheet supporting a few common view types:
 
 Header and content:
-<header>
-	<h1>My awesome app</h1>
-</header>
+'<header>'
+	'<h1>'My awesome app'</h1>'
+'</header>'
 <div>
 	<!-- content goes here -->
 </div>
