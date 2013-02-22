@@ -1,10 +1,12 @@
-var static = require('node-static');
-
-var fileServer = new static.Server('./app');
+var connect = require('connect');
+var less = require('less-middleware');
 
 console.log('Listening on 8080');
-require('http').createServer(function (request, response) {
-    request.addListener('end', function () {
-        fileServer.serve(request, response);
-    });
-}).listen(8080);
+
+connect.createServer(
+  less({
+      src: __dirname + '/../app/',
+	  compress:false
+  }),
+  connect.static('./app')
+).listen(8080);
